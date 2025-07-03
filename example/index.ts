@@ -1,11 +1,17 @@
-import { type FunctionComponent, render } from 'preact'
-import { html } from 'htm/preact'
-import { example } from '../src/index.js'
+import { lockBodyScrolling, unlockBodyScrolling } from '../src/index.js'
+import './index.css'
+import '../src/index.css'
+import Debug from '@substrate-system/debug'
+const debug = Debug()
 
-example()
+document.getElementById('lock')?.addEventListener('click', ev => {
+    ev.preventDefault()
+    lockBodyScrolling(document.body)
+    debug('lock')
+})
 
-const Example:FunctionComponent<unknown> = function () {
-    return html`<div>hello</div>`
-}
-
-render(html`<${Example} />`, document.getElementById('root')!)
+document.getElementById('unlock')?.addEventListener('click', ev => {
+    ev.preventDefault()
+    unlockBodyScrolling(document.body)
+    debug('unlocked')
+})
