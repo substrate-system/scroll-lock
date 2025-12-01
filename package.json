@@ -49,7 +49,7 @@
     "@typescript-eslint/parser": "^8.0.0",
     "auto-changelog": "^2.4.0",
     "cssnano": "^7.0.7",
-    "esbuild": "^0.25.0",
+    "esbuild": "^0.27.0",
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "markdown-toc": "^1.2.0",
@@ -60,7 +60,7 @@
     "tape-run": "^11.0.0",
     "typedoc": "^0.28.1",
     "typescript": "^5.7.2",
-    "vite": "^6.0.7"
+    "vite": "^7.2.4"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "SEE LICENSE IN LICENSE",
